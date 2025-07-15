@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagens</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Abra esse html em diversos dispositivos ou aumente/diminua o zoom do navegador</p>
+    
+    <picture>
+            <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexivel">
+
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Escuta essa pedrada</p>
+    <audio preload="auto" autoplay muted controls loop>
+        <source src="midia/brainrot.mp3" type="audio/mpeg">
+    </audio>
+
+      <p>Clique aqui para baixar essa sinfonia <a href="midia/brainrot.mp3" download="midia/brainrot.mp3">BAIXAR</a></p>
+
+    <h1>Video brabo ai da uma conferida</h1>
+    <p>Hospedado internamente</p>
+    <video width="500" poster="imagens/images.jfif" controls>
+        <source src="midia/6575012-uhd_3840_2160_25fps.mp4" type="video/mp4">
+    </video>
+
+    <h1>Outro video brabo</h1>
+    <p>Hospedado externamente (youtube)</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rr0U55CKD1A?si=KuqNqSi_a9n9dsJW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+</body>
+</html>
