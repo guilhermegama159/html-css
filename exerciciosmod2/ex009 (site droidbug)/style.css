@@ -73,7 +73,8 @@ article {
     width: 800px;             
     margin: 0 auto;
     word-wrap: break-word;
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+    padding: 20px; 
               
 }
     
@@ -88,6 +89,7 @@ h1, h2{
 p{
     text-indent: 20px;
     padding-left: 10px;
+    text-align: justify;
 }
 
 article > h2{
@@ -114,24 +116,6 @@ span {
     font-weight: bold;
 }
 
-.centraliza-frame {
-  background-color: var(--cor6);
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: auto;      
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.centraliza-frame iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 
 aside{
     background-color:var(--cor2);
@@ -153,14 +137,13 @@ aside > h3 {
   gap: 40px;
 }
 
-.listas-lado-a-lado ul {
+ul {
   list-style: none;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  margin-right: 80px;
+  list-style-position: inside;
+  columns: 2;
 }
 
-.listas-lado-a-lado li::before {
+li::before {
   content: "✔ ";
   color: green;
   
@@ -171,12 +154,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-}
-
-div.video{
-  background-color: var(--cor6);
-  padding: 40px 0;
-  width: 100%;
 }
 
 
@@ -192,4 +169,18 @@ div.video{
 
 p > a::after{
     content: " ← ";
+}
+
+div.video {
+  background-color: var(--cor5);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0px -20px 30px -20px;
+}
+
+div.video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  display: block;
 }

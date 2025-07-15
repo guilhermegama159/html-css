@@ -13,9 +13,32 @@
         color: blanchedalmond;
     }
     table{
+        padding-top: 70px;
         margin: auto;
     }
+    
 
     a{
         color: burlywood;
     }
+
+a > img.principal{
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+.video {
+  max-width: 800px;
+  margin: auto;
+}
+
+.video iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  display: block;
+}
+
+
