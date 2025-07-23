@@ -12,8 +12,8 @@
     --color01: black;
     --color02: white;
 
-    --fontprincipal: "passion one";
-    --fontsecundaria: "sriracha";
+    --fontprincipal: 'passion one', cursive;
+    --fontsecundaria:'sriracha', cursive;
     --fontepadrao: Verdana, Geneva, Tahoma, sans-serif;
 
 }

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        tr.head{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr > th{
+            text-align: left;
+        }
+
+        tbody > tr > td{
+            text-align: center;
+        }
+
+        col.area{
+            background-color: aqua;
+        }
+
+        col.disciplinas{
+            background-color: rgba(0, 255, 255, 0.527);
+        }
+
+        col.nota{
+            background-color: rgba(0, 255, 255, 0.26);
+        }
+
+        col.media{
+            background-color: rgb(169, 255, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <!-- nao pinta por nome mas sim por colunas, ele so vai verificando coluna 1..2..3, nao segue pelo nome, nome é so pra ficar facil de entender -->
+        <colgroup>
+        <col class="area">
+        <col class="disciplinas">
+        <col class="nota" span="2">
+        <col class="media">
+        </colgroup>
+
+    <thead>
+        <tr>
+            <th rowspan="2" scope="col">Area</th>
+            <th rowspan="2" scope="col">Disciplinas</th>
+            <th colspan="2" scope="colgroup">nota</th>
+            <th rowspan="2" scope="col">media</th>
+        </tr>
+        <tr>
+            <th scope="col">nota 1</th>
+            <th scope="col">nota 2</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th rowspan="4" scope="rowgroup" style="text-align: center;">Exatas</th>
+            <td>matematica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Fisica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Quimica</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr class="head">
+            <th colspan="4" scope="row">media de exatas</th>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Humanas</th>
+            <td>Historia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0.0</td>
+        </tr>
+        <tr class="head">
+            <th colspan="4" scope="row">media de humanas</th>
+            <td>0.0</td>
+        </tr>
+        
+    </tbody>
+    </table>
+</body>
+</html>
