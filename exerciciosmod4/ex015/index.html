@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="off">
+    <fieldset>
+        <legend>Informe seu Nome, idade e genero</legend>
+
+        <p>
+            <label for="inome"></label>
+            <input type="text" name="nome" id="inome" placeholder="nome" required>
+        </p>
+
+        <p>
+            <label for="iidade"></label>
+            <input type="number" name="idade" id="iidade" placeholder="idade" required>
+        </p>
+
+
+        <p>
+            <label for="imasculino"></label>
+            <input type="radio" name="genero" id="imasculino" required>
+            masculino
+
+            <label for="ifeminino"></label>
+            <input type="radio" name="genero" id="ifeminino" required>
+            feminino
+        </p>
+
+    </fieldset>
+    <fieldset>
+        <legend>Qual(is) serviço(s) deseja atendimento</legend>
+        <p>
+            <input type="checkbox" name="tv" id="itv">
+            <label for="itv">Tv box com canais premium</label><br>
+
+            <input type="checkbox" name="tv" id="appmusic" >
+            <label for="appmusic">App de musica sem anuncios</label><br>
+
+            <input type="checkbox" name="tv" id="inet">
+            <label for="inet">5g ilimitado para navegar</label>
+            
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Vamos entrar em contato pelo</legend>
+        <label for="iemail">email</label>
+        <input type="email" name="email" id="iemail" required>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Sua cidade</legend>
+        <select name="cidade" id="icidade" required>
+            <option value="SP">Sao paulo</option>
+            <option value="MG">Minas gerais</option>
+            </select>
+    </fieldset>
+    <fieldset>
+        <legend>Conte-nos seu problema</legend>
+    <textarea name="mensagem" id="imsg" placeholder="Digite sua reclamação aqui"></textarea>
+    </fieldset>
+    <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

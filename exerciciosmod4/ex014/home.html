@@ -12,15 +12,36 @@
         body{
             height: 100vh;
             width: 100vw;
-            background: black url(imagens/tela-home.jpg) no-repeat top center;
+            background: black url(imagens/iphoneback.jfif) no-repeat top center;
             background-size: cover;
+        }
+
+        section#menu img {
+            width: 45px;
+            margin: 9px;
+            border-radius: 20%;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+            box-sizing: border-box;
+        }
+
+        section#menu img:hover{
+            border: 2px solid rgba(255, 255, 255, 0.637);
+            transform: translate(3px, 3px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            transition: transform .3s, border 1s;
         }
 
     </style>
     <title>Document</title>
 </head>
 <body>
-   
+   <section id="menu">
+        <a href="youtube.html" target="frame"><img src="imagens/logo-youtube.jpg" alt="youtube"></a>
+        <a href="git.html" target="frame"> <img src="imagens/logo-github.jpg" alt="github"></a>
+        <a href="insta.html" target="frame"><img src="imagens/logo-instagram.jpg" alt="instagram"></a>
+        <a href="twitter.html" target="frame"><img src="imagens/logo-twitter.jpg" alt="twitter"></a>
+        <a href="facebook.html" target="frame"><img src="imagens/logo-facebook.jpg" alt="facebook"></a>
+    </section>
     
 </body>
 </html>
