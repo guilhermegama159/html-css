@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../imagens/back-phone.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+div{
+    background-color: rgba(255, 255, 255, 0.74);
+    max-width: 300px;
+    border-radius: 30px;
+    margin: auto;
+}
+
+h1{
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    display: none;
+    padding-left: 50px;
+
+}
+
+img#phone{
+    display: block;
+}

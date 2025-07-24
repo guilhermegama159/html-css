@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    span#menu{
+        display: none;
+    }
+
+    nav{
+        background-color: rgb(61, 61, 61);
+    }
+
+    nav > ul > li {
+        display: inline-block;
+    }
+
+    nav > ul > li > a {
+        border-top: none;
+        text-align: left;
+        border-right: 1px solid darkgray;
+    }
+
+    main{
+        max-width: 768px;
+        margin: auto;
+    }
+
+}
