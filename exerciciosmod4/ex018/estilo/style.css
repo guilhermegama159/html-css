@@ -132,6 +132,7 @@ form > a.botao{
     border: 1px solid var(--cor01);
     border-radius: 5px;
     text-decoration: none;
+    padding-top: 8px;
     
 }
 
