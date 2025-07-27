@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rony car | Estética Automotiva </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loader Inicial -->
+    <div class="loader">
+        <div class="loader-logo">
+            <svg viewBox="0 0 100 100">
+                <path d="M50,10 L90,50 L50,90 L10,50 Z" fill="none" stroke="#ffd700" stroke-width="2"/>
+            </svg>
+            <span>RONYCAR</span>
+        </div>
+    </div>
+
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+
+    <!-- Menu Flutuante -->
+    <div class="floating-menu">
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="social-float">
+            <a href="https://whatsa.me/5515998133706/?t=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/ronycar/" class="insta-float" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Menu Lateral -->
+    <nav class="side-nav">
+        <div class="nav-header">
+            <span>MENU</span>
+            <div class="close-nav">&times;</div>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#social">Redes Sociais</a></li>
+            <li><a href="#video">Vídeo</a></li>
+            <li><a href="#location">Localização</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+        <div class="nav-footer">
+            <p>RONYCAR</p>
+            <small>Excelência em estética automotiva</small>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Seção Hero -->
+        <section id="home" class="hero-section">
+            <div class="hero-video-bg">
+                <video autoplay muted loop>
+                    <source src="media/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="RONYCAR">RONYCAR</h1>
+                <p class="typewriter">Excelência em estética automotiva</p>
+                <a href="#services" class="cta-button pulse">NOSSOS SERVIÇOS</a>
+            </div>
+            <div class="scroll-down">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2>NOSSOS <span>SERVIÇOS</span></h2>
+                <p>Oferecemos os melhores tratamentos para seu veículo</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Detalhamento Completo</h3>
+                    <p>Revitalização total do veículo com técnicas profissionais.</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>Limpeza interna profunda</li>
+                            <li>Polimento de pintura</li>
+                            <li>Hidratação de couro</li>
+                            <li>Tratamento de plásticos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Proteção de pintura</h3>
+                    <p>Revestimento de alta durabilidade para pintura.</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>Durabilidade de até 5 anos</li>
+                            <li>Proteção contra UV</li>
+                            <li>Efeito anti-aderente</li>
+                            <li>Brilho intenso</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Hidrofobização</h3>
+                    <p>Tratamento que repele água e sujeira.</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>Vidros e pintura</li>
+                            <li>Efeito "auto-limpante"</li>
+                            <li>Melhora visibilidade na chuva</li>
+                            <li>Durabilidade de 1 ano</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Limpeza Técnica</h3>
+                    <p>Higienização profissional de estofamentos.</p>
+                    <div class="service-hover">
+                        <ul>
+                            <li>Remoção de manchas</li>
+                            <li>Eliminação de odores</li>
+                            <li>Tratamento anti-bacteriano</li>
+                            <li>Secagem rápida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Galeria -->
+        <section id="gallery" class="gallery-section">
+            <div class="section-header">
+                <h2>NOSSO <span>TRABALHO</span></h2>
+                <p>Veja a transformação que realizamos</p>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="imagens/banco.jpg" alt="Detalhamento completo">
+                    <div class="gallery-overlay">
+                        <h3>Detalhamento Completo</h3>
+                        <p>BMW Série 3 - 2022</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/motor.jpg" alt="Limpeza de motor">
+                    <div class="gallery-overlay">
+                        <h3>Limpeza de Motor</h3>
+                        <p>Porsche 911 - 2021</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/hidro.jpg" alt="Hidrofobização">
+                    <div class="gallery-overlay">
+                        <h3>Hidrofobização</h3>
+                        <p>Mercedes-Benz Classe A - 2023</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/limpandomotor.jpg" alt="Limpeza técnica">
+                    <div class="gallery-overlay">
+                        <h3>Limpeza Técnica</h3>
+                        <p>Range Rover Evoque - 2020</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/polimento.jpg" alt="Polimento">
+                    <div class="gallery-overlay">
+                        <h3>Polimento Profissional</h3>
+                        <p>Audi R8 - 2019</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="imagens/limpezainterna.jpg" alt="Detalhamento interno">
+                    <div class="gallery-overlay">
+                        <h3>Detalhamento Interno</h3>
+                        <p>Tesla Model S - 2022</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <p>Quer ver mais do nosso trabalho?</p>
+                <a href="#social" class="cta-button">ACESSE NOSSAS REDES</a>
+            </div>
+        </section>
+
+        <!-- Seção Redes Sociais -->
+        <section id="social" class="social-section">
+            <div class="section-header">
+                <h2>REDES <span>SOCIAIS</span></h2>
+                <p>Siga-nos para acompanhar nosso trabalho diário</p>
+            </div>
+            <div class="social-grid">
+                <div class="social-card instagram-feed">
+                    <h3><i class="fab fa-instagram"></i> INSTAGRAM</h3>
+                    <div class="feed-container" id="instafeed">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBH2oaAOKqP/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DBH2oaAOKqP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DBH2oaAOKqP/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Rony Car (@ronycar)</a></p></div></blockquote>
+                    </div>
+<script async src="//www.instagram.com/embed.js"></script>
+                    <a href="https://www.instagram.com/ronycar/" class="social-link" target="_blank">@ronycar</a>
+                </div>
+                
+            </div>
+            <div class="whatsapp-cta">
+                <div class="whatsapp-content">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>AGENDE SEU SERVIÇO</h3>
+                        <p>Entre em contato diretamente pelo WhatsApp</p>
+                    </div>
+                </div>
+                <a href="https://whatsa.me/5515998133706/?t=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o" class="cta-button whatsapp-button" target="_blank">CHAMAR NO WHATSAPP</a>
+            </div>
+        </section>
+
+        <!-- Seção Vídeo -->
+        <section id="video" class="video-section">
+            <div class="section-header">
+                <h2>NOSSO <span>PROCESSO</span></h2>
+                <p>Assista ao vídeo e conheça nosso método de trabalho</p>
+            </div>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="video-caption">
+                    <p>Nosso processo de detalhamento completo leva em média 12 horas de trabalho. Utilizamos apenas produtos de alta qualidade e técnicas comprovadas para garantir o melhor resultado para seu veículo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Localização -->
+        <section id="location" class="location-section">
+            <div class="section-header">
+                <h2>NOSSA <span>LOCALIZAÇÃO</span></h2>
+                <p>Venha nos visitar em nosso espaço exclusivo</p>
+            </div>
+            <div class="location-container">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9792187730627!2d-47.40923220000004!3d-23.497257999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6143d516efcf%3A0x9622a215195d13f4!2sRony%20Car%20centro%20de%20estetica%20automotiva!5e0!3m2!1spt-BR!2sbr!4v1753566568364!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="location-info">
+                    <h3>RONYCAR</h3>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> R. Agripino Guedes, 399 - Jardim Astro, Sorocaba - SP, 18017-151</p>
+                        <p><i class="fas fa-phone-alt"></i> (15) 99813-3706</p>
+                        <p><i class="fas fa-envelope"></i> contato@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Seg-Sex: 9h às 18h | Sáb: 9h às 14h</p>
+                    </address>
+                    <div class="location-buttons">
+                        <a href="https://www.google.com.br/maps/dir//Rony+Car+centro+de+estetica+automotiva+-+R.+Agripino+Guedes,+399+-+Jardim+Astro,+Sorocaba+-+SP,+18017-151/@-23.497258,-47.4092322,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94cf6143d516efcf:0x9622a215195d13f4!2m2!1d-47.4092322!2d-23.497258?hl=pt-BR&entry=ttu&g_ep=EgoyMDI1MDcyMy4wIKXMDSoASAFQAw%3D%3D" class="cta-button outline" target="_blank"><i class="fas fa-directions"></i> COMO CHEGAR</a>
+                        <a href="https://whatsa.me/5515998133706/?t=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o" class="cta-button" target="_blank"><i class="fas fa-calendar-alt"></i> AGENDAR HORARIO</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>FALE <span>CONOSCO</span></h2>
+                <p>Tire suas dúvidas ou solicite um orçamento</p>
+            </div>
+            <div class="contact-div">
+                    <a href="https://whatsa.me/5515998133706/?t=Ol%C3%A1,%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o" target="_blank">
+                    <button type="submit" class="cta-button submit-button"> 
+                        <span>ENVIAR MENSAGEM</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>RONYCAR</h3>
+                <p>Detailing Automotivo</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#gallery">Galeria</a></li>
+                    <li><a href="#video">Vídeo</a></li>
+                    <li><a href="#location">Localização</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Agripino Guedes, 399 - Sorocaba/SP</p>
+                <p><i class="fas fa-phone-alt"></i> (15) 99813-3706</p>
+                <p><i class="fas fa-envelope"></i> contato@gmail.com.br</p>
+                <p><i class="fas fa-clock"></i> Seg-Sex: 9h-18h | Sáb: 9h-14h</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rony Car. Todos os direitos reservados.</p>
+            <p>Desenvolvido por Guilherme Gama</p>
+        </div>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#home" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/instafeed.js@1.4.1/dist/instafeed.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
