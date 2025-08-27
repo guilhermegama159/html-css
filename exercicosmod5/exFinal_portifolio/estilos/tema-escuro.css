@@ -1,0 +1,12 @@
+/* Tema escuro */
+
+
+
+body.escuro {
+    --fundo-principal: #292929;
+    --texto: #ffffff;
+    --texto-inverso: #000000;
+    --destaque: #ffae00;
+    --destaque-inverso: #ffc400;
+    --fundo-card: #292929;
+}
