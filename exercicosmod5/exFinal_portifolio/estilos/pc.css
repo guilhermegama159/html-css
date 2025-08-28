@@ -87,21 +87,19 @@ div#container{
     display: grid;
     height: 100%;
     width: 100%;
-    grid-template-rows: auto auto;
-    grid-template-columns: 30px auto 30px;
-    
+    grid-template-rows: auto;
+    grid-template-columns:30px 300px 30px auto 30px;
+    grid-auto-flow: row;
 }
 
-div#ficha{
-    background-color: var(--fundo-card);
-    grid-row-start: 1;
-    grid-row-end: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
+div#ficha{ 
+    background-color: var(--fundo-card); grid-row-start: 1; grid-row-end: 1; grid-column-start: 2; grid-column-end: 3; 
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 30px;
+    align-items: center; flex-direction: column; 
+    position: fixed;
+    max-width: 300px;
+    margin-left: 30px;
+
 }
 
 div#ficha img{
@@ -117,13 +115,25 @@ div h2{
     margin-bottom: 10px;
     color: var(--destaque);
     font-size: 1.2em;
-    margin-top: 20px;
+    margin: 30px 0px;
 }
 
-div p{
+div#ficha h2{
+    width: 120px;
+    line-height: 1;
+    margin: 5px 0px;
+}
+
+div p, .nome{
     text-align: justify;
     font-size: 0.8em;
     color: var(--texto);
+   
+}
+
+div#ficha p{
+    text-align: left;
+    font-size: 0.7em;
 }
 div#ficha ul{
     list-style: none;
@@ -139,9 +149,9 @@ div#ficha a{
 
 .link-icone i {
     font-size: 24px;
-    color: var(--destaque);
-    margin: 0 8px;    
-    transition: all 0.3s;         
+    color: var(--destaque);    
+    transition: all 0.3s;
+             
 }
 
 .link-icone:hover {
@@ -152,14 +162,17 @@ div#ficha a{
 div#detalhes{
     background-color: var(--fundo-card);
     display: grid;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    
+
 }
 
 div.container_video{
-    width: 400px;
+    width: 100%;
+    max-width: 700px;
     margin: auto;
     
 }
@@ -169,7 +182,14 @@ div.container_video iframe{
     height: auto;
     display: block;
     aspect-ratio: 16/9;
-    border-radius: 20px;
+}
+
+ul.skills{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 40px;
+    padding: 0px;
 }
 
 .barra {
@@ -192,7 +212,7 @@ div.container_video iframe{
     background-color: var(--destaque);
 }
 
-p.porcentagem {
+.porcentagem {
     float: right;
     margin-top: -20px;
     font-size: 0.8em;
@@ -237,13 +257,24 @@ div.formacao:hover h4{
 
 div.projetos{
     color: var(--texto);
+    display: flex;
     position: relative;
-    display: inline-block;
-   padding-left: 10px;
-    margin-bottom: 40px;
+    padding-left: 10px;
+    margin: 0 auto 40px auto;
     transition: all 0.3s;
-    width: 400px;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+    
+    
 }
+
+
+
 
 div.projetos::before{
     position: absolute;
@@ -273,12 +304,15 @@ div.projetos:hover h4{
 }
 
 div.projetos img{
-    height: auto;
-    width: 400px;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 div.projetos a{
-    text-decoration: none;   
+    text-decoration: none;  
+    width: 100%;
 }
 
 div.projetos a:visited{
