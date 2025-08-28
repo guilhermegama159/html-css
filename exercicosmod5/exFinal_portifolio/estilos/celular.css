@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior: smooth;
+    scrollbar-width: none;
 }
 
 body{
@@ -112,6 +113,7 @@ div#ficha img{
     border-radius: 50%;
     margin: 20px;
     border: 4px solid var(--destaque);
+    object-fit: cover;
 }
 
 div h2{

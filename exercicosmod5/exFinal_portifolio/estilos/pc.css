@@ -108,6 +108,7 @@ div#ficha img{
     border-radius: 50%;
     margin: 20px;
     border: 4px solid var(--destaque);
+    object-fit: cover;
 }
 
 div h2{
@@ -269,12 +270,7 @@ div.projetos{
     flex-direction: row-reverse;
     justify-content: flex-end;
     
-    
-    
 }
-
-
-
 
 div.projetos::before{
     position: absolute;
@@ -291,11 +287,12 @@ div.projetos::before{
 div.projetos:hover::before{
     width: 8px;
     background-color: var(--destaque);
-    left: -10px;
+    left: 0px;
 }
 
-div.projetos:hover{
-    margin-left: 10px;
+div.projetos a:hover{
+    margin-left: 20px;
+    transition: all 0.3s;
     
 }
 
